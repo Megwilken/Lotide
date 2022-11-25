@@ -6,9 +6,6 @@ const assertArraysEqual = function(actual, expected) {
     console.log(`😭😭😭Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-assertArraysEqual("Lighthouse Labs", "Bootcamp");
-assertArraysEqual(1, 1);
-
 
 const eqArrays = function(arrayOne, arrayTwo) {
   if (arrayOne.length !== arrayTwo.length) {

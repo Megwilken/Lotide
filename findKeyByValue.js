@@ -5,10 +5,6 @@ const assertEqual = function(actual, expected) {
     console.log(`😭😭😭Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-// TEST CODE
-// assertEqual("Lighthouse Labs", "Bootcamp");
-// assertEqual(1, 1);
-
 
 // implement a function that scans the object (object = bestTVShowsByGenre), and returns the first
 // key (key = genres) that contain's the given value (value = show names)

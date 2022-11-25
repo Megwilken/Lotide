@@ -5,9 +5,6 @@ const assertEqual = function(actual, expected) {
     console.log(`😭😭😭Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
 
 // declare countLetters function that takes in a string
 const countLetters = function(string) {

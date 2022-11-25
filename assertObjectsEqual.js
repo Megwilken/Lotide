@@ -1,11 +1,10 @@
-const assertEqual = function(actual, expected) {
+const assertObjectsEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`😍😍😍Assertion Passed: ${actual} === ${expected}`);
   } else if (actual !== expected) {
     console.log(`😭😭😭Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-
 //Implement the definition for function eqObjects which will take in
 //two objects and returns true or false, based on a perfect match.
 // Returns true if both objects have identical keys with identical values.
@@ -24,7 +23,13 @@ const eqObjects = function(object1, object2) {
   return true;                                  // else return true
 };
 
+//Test Code
+const ab = { a: "1", b: "2" };
+const ba = { b: "2", a: "1" };
+assertObjectsEqual(eqObjects(ab, ba), true);  // =>true
 
+const abc = { a: "1", b: "2", c: "3" };
+assertObjectsEqual(eqObjects(ab, abc), false);  // => false
 
 // eqArrays function - copied 
 
@@ -39,18 +44,10 @@ const eqArrays = function(arrayOne, arrayTwo) {
   }
   return true;
 };
-
-//Test Code
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-assertEqual(eqObjects(ab, ba), true);  // =>true
-
-const abc = { a: "1", b: "2", c: "3" };
-assertEqual(eqObjects(ab, abc), false);  // => false
 // Test Code
 const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
-assertEqual(eqArrays(cd, dc), true); // => true
+assertObjectsEqual(eqArrays(cd, dc), true); // => true
 
 const cd2 = { c: "1", d: ["2", 3, 4] };
-assertEqual(eqArrays(cd, cd2), false); // => false  // Test failed - some debugging needed in eqArrays function?
+assertObjectsEqual(eqArrays(cd, cd2), false); // => false  // Test failed - some debugging needed in eqArrays function?

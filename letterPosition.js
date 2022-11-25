@@ -26,9 +26,6 @@ assertArraysEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => false
 assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
 assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
 
-
-
-
 // Implement letterPositions function
 const letterPositions = function(sentence) {
 //create empty variable to store results
