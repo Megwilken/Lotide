@@ -25,3 +25,5 @@ const countLetters = function(string) {
 console.log(countLetters("LHL"));
 console.log(countLetters("Hi. Hello. How Are You?"));
 console.log(countLetters("Lighthouse Labs"));
+
+module.exports = countLetters;

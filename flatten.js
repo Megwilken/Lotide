@@ -38,3 +38,5 @@ const flatten = function(firstArray) {
 };
 // TEST CODE
 console.log(flatten([1, 2, [3, 4], 5, [6]]));
+
+module.exports = flatten;

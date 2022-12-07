@@ -49,3 +49,5 @@ assertArraysEqual(eqArrays(results2, [ 'r', 'o', 'o', 'a', 'o' ]), true);
 const results3 = map(words, word => word[2]);
 console.log(results3);
 assertArraysEqual(eqArrays(results3, [ 'o', 'n', undefined, 'j', 'm' ]), true);
+
+module.exports = map;

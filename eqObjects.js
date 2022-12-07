@@ -54,3 +54,5 @@ assertEqual(eqObjects(cd, dc), true); // => true
 
 const cd2 = { c: "1", d: ["2", 3, 4] };
 assertEqual(eqArrays(cd, cd2), false); // => false  // Test failed - some debugging needed in eqArrays function?
+
+module.exports = eqObjects;
