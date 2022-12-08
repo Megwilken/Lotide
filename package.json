@@ -1,7 +1,7 @@
 {
-  "name": "@Megwilken/lotide",
+  "name": "@megwilken/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A clone of the lodash library to implement various types of JavaScript functions",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -11,16 +11,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Megwilken/lotide.git"
+    "url": "git+https://github.com/megwilken/lotide.git"
   },
-  "author": "",
+  "author": "@Megwilken",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Megwilken/lotide/issues"
+    "url": "https://github.com/megwilken/lotide/issues"
   },
-  "homepage": "https://github.com/Megwilken/lotide#readme",
+  "homepage": "https://github.com/megwilken/lotide#readme",
   "devDependencies": {
     "chai": "^4.3.7",
     "mocha": "^9.2.2"
+  },
+  "dependencies": {
+    "my-package": "*"
   }
 }
