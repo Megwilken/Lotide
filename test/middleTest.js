@@ -1,6 +1,5 @@
 
 const assert = require('chai').assert;
-const { it } = require('mocha');
 const middle = require('../middle.js');
 
 
